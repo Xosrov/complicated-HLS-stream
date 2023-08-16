@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hls.js/1.4.10/hls.min.js"></script>
+    <script src="static/main.js"></script>
+    <script>
+        var sections = "{{.sectionsb64}}"
+    </script>
+</head>
+
+<body>
+    <h1>Manifest through WebRTC but stream through POST</h1>
+
+    <h3> ICE Connection States </h3>
+    <div id="iceConnectionStates"></div> <br />
+
+    <video height="600" id="video" controls autoplay></video>
+
+    <input type="radio" id="quality_1" name="quality" value="q1" onclick="changeQuality(0)">
+    <label for="q1">Quality 1</label><br>
+    <input type="radio" id="quality_2" name="quality" value="q2" onclick="changeQuality(1)">
+    <label for="q2">Quality 2</label><br>
+    <input type="radio" id="quality_3" name="quality" value="q3" onclick="changeQuality(2)">
+    <label for="q3">Quality 3</label>
+
+</body>
+
+</html>
