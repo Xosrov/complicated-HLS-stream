@@ -24,7 +24,7 @@ Still using GET requests in 2023? Borrrring! Let's fetch fragments with POST ins
 ## Usage
 
 1. Install `python`, `golang` and `ffmpeg`.
-2. Generate segments for your video: `bash generate.sh [video_file]`
+2. Generate segments for your video: `bash generate.sh [video_file] [ip_addr]`
 3. Run server: `go run main.go`
 
 EZ right?
